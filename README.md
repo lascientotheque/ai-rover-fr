@@ -28,7 +28,7 @@ Les activités se décomposent en trois parties:
 
 <div align="center">
 <h4>Google teachable Machine: Apprends à une IA à reconnaître des images:</h4>
-<img src="./1_Reconnaissance_Images/images/ir_tm_tube_english.jpg"  width="600"/> 
+<img src="./images/TM_5_tube_other_fr.jpg"  width="600"/> 
 </div>
 
 
@@ -41,13 +41,13 @@ Les activités se décomposent en trois parties:
 <table>
     <tr>
         <td> 
-            <img src="5_Construction_Rover/images/CamJam_Box.jpg"  width="300"/> 
+            <img src="./images/CamJam_Box.jpg"  width="300"/> 
         </td>
         <td> 
-            <img src="5_Construction_Rover/images/CamJam_Chassis.jpg" alt="drawing" width="300"/> 
+            <img src="./images/CamJam_3DPrint.jpg" alt="drawing" width="300"/> 
         </td>
         <td> 
-            <img src="5_Construction_Rover/images/camjam_wood.png" width="300"/>
+            <img src="./images/CamJam_Wood.png" width="300"/>
         </td>
     </tr>
     <tr>
