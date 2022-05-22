@@ -300,13 +300,28 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#apercu-et-motivations-des-activites">
-   Aperçu et motivations des activités
+  <a class="reference internal nav-link" href="#motivations-des-activites">
+   Motivations des activités
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#apercu">
+   Aperçu
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#detail-des-activites">
-     Détail des activités
+    <a class="reference internal nav-link" href="#reconnaissance-d-images">
+     1. Reconnaissance d’images
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#construction-du-marscambot">
+     2. Construction du MarsCamBot
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#controle-intelligent-du-rover">
+     3. Contrôle intelligent du rover
     </a>
    </li>
   </ul>
@@ -354,24 +369,80 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>A partir de <strong>14 ans</strong> pour les activités de reconnaissance d’images, construction du robot, et <strong>programmation en Python</strong>.</p></li>
 </ul>
 </div>
-<div class="section" id="apercu-et-motivations-des-activites">
-<h2>Aperçu et motivations des activités<a class="headerlink" href="#apercu-et-motivations-des-activites" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="motivations-des-activites">
+<h2>Motivations des activités<a class="headerlink" href="#motivations-des-activites" title="Permalink to this headline">¶</a></h2>
 <p>En 2026, l’Agence Spatiale Européenne (ESA) et la National Aeronautics and Space Administration (NASA) enverront <a class="reference external" href="https://fr.wikipedia.org/wiki/Mars_Sample_Return#Mission_Sample_Retrieval_Lander_(SRL)">un rover sur Mars avec pour mission de récuperer des tubes contenant des échantillons de sol martien</a>. Le rover, qui s’appelle Fetch (qui signifie ‘récupérer’ en anglais), devra être capable de se déplacer, de retrouver les tubes, et de les récupérer de la façon la plus autonome possible. Pour cela, Fetch utilisera des techniques d’intelligence artificielle, notamment de reconnaissance d’images pour trouver de façon autonome les tubes déposés sur le sol par le rover <a class="reference external" href="https://en.wikipedia.org/wiki/Perseverance_(rover)">Perseverance</a> en 2022.</p>
 <p>Les activités proposées ici visent à faire découvrir comment concevoir un système d’intelligence artificielle pour de la reconnaissance d’images, et comment permettre à un rover martien de l’utiliser.</p>
-<p>Les activités se décomposent en trois parties:</p>
-<ul class="simple">
-<li><p>Tout d’abord, nous expliquons comment créer <strong>un modèle prédictif pour la reconnaissance d’image</strong>. On utilisera pour cela la <em>Google Teachable Machine</em>. On montrera ensuite comment le modèle peut être <strong>utilisé dans un programme de façon simple, avec Scratch, ou en Python</strong> pour retrouver des tubes sur un sol martien. Ce sont les activités 1 à 3.</p></li>
-</ul>
-<div align="center">
-<h4>Google teachable Machine: Apprends à une IA à reconnaître des images:</h4>
+</div>
+<div class="section" id="apercu">
+<h2>Aperçu<a class="headerlink" href="#apercu" title="Permalink to this headline">¶</a></h2>
+<p>Les activités se décomposent en trois parties: Reconnaissance d’images, construction du rover, et contrôle intelligent du rover.</p>
+<div class="section" id="reconnaissance-d-images">
+<h3>1. Reconnaissance d’images<a class="headerlink" href="#reconnaissance-d-images" title="Permalink to this headline">¶</a></h3>
+<p>Tout d’abord, nous expliquons comment créer <strong>un modèle prédictif pour la reconnaissance d’image</strong>. On utilisera pour cela la <em>Google Teachable Machine</em>. On montrera ensuite comment le modèle peut être <strong>utilisé dans un programme de façon simple, avec Scratch, ou en Python</strong> pour retrouver des tubes sur un sol martien.</p>
+<p>Ce sont les activités 1 à 3:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Numéro activité</p></th>
+<th class="text-align:left head"><p>Activité</p></th>
+<th class="text-align:left head"><p>Age</p></th>
+<th class="text-align:left head"><p>Temps estimé</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>1</p></td>
+<td class="text-align:left"><p>Reconnaissance d’images avec la Teachable Machine</p></td>
+<td class="text-align:left"><p>10-18</p></td>
+<td class="text-align:left"><p>2-4h</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>2</p></td>
+<td class="text-align:left"><p>Reconnaissance d’images avec Scratch</p></td>
+<td class="text-align:left"><p>10-14</p></td>
+<td class="text-align:left"><p>2-4h</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>3</p></td>
+<td class="text-align:left"><p>Reconnaissance d’images avec Python</p></td>
+<td class="text-align:left"><p>14-18</p></td>
+<td class="text-align:left"><p>2-4h</p></td>
+</tr>
+</tbody>
+</table>
+<p>Exemple de l’interface Teachable Machine que vous utiliserez pour apprendre à une IA à reconnaître des images (par exemple retrouver des tubes sur un sol martien):</p>
 <a class="reference internal image-reference" href="_images/TM_5_tube_other_fr.jpg"><img alt="_images/TM_5_tube_other_fr.jpg" src="_images/TM_5_tube_other_fr.jpg" style="width: 600px;" /></a>
 </div>
-<ul class="simple">
-<li><p>La deuxième partie consistera à <strong>construire un rover</strong>, appelé ‘MarsCamBot’, et à programmer des déplacements. Une carte programmable <a class="reference external" href="https://www.raspberrypi.com/products/raspberry-pi-3-model-b/">Raspberry Pi</a> et le <a class="reference external" href="https://camjam.me/?page_id=1035">CamJam EduKit</a> seront utilisés (Le CamJam EduKit fournit toutes les pièces nécessaires à la construction du rover: Les roues, les moteurs, et la connectique). L’activité est prévue pour être <strong>simple, relativement abordable financièrement</strong> (Environ 80 euros en tout pour un CamJam EduKit, une carte programmable Raspberry Pi, et une caméra), et offrant une <strong>large liberté dans la ‘personnalisation’ de l’apparence du rover</strong>.  Ce sont les activités 4 à 6.</p></li>
-</ul>
-<div align="center">
-<h4>Exemples de rovers MarsCamBot construits un chassis en carton, en impression 3D, ou en bois:</h4>
+<p>Note: Les activités 2 et 3 sont indépendantes, mais nécessitent d’avoir fait l’activité 1 pour créer un modèle de reconnaissance d’images.</p>
 </div>
+<div class="section" id="construction-du-marscambot">
+<h3>2. Construction du MarsCamBot<a class="headerlink" href="#construction-du-marscambot" title="Permalink to this headline">¶</a></h3>
+<p>La deuxième partie consistera à <strong>construire un rover</strong>, appelé ‘MarsCamBot’, et à programmer des déplacements. Une carte programmable <a class="reference external" href="https://www.raspberrypi.com/products/raspberry-pi-3-model-b/">Raspberry Pi</a> et le <a class="reference external" href="https://camjam.me/?page_id=1035">CamJam EduKit</a> seront utilisés (Le CamJam EduKit fournit toutes les pièces nécessaires à la construction du rover: Les roues, les moteurs, et la connectique). L’activité est prévue pour être <strong>simple, relativement abordable financièrement</strong> (Environ 80 euros en tout pour un CamJam EduKit, une carte programmable Raspberry Pi, et une caméra), et offrant une <strong>large liberté dans la ‘personnalisation’ de l’apparence du rover</strong>.</p>
+<p>Ce sont les activités 4 à 6:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Numéro activité</p></th>
+<th class="text-align:left head"><p>Activité</p></th>
+<th class="text-align:left head"><p>Age</p></th>
+<th class="text-align:left head"><p>Temps estimé</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p>4</p></td>
+<td class="text-align:left"><p>Construction du MarsCamBot</p></td>
+<td class="text-align:left"><p>10-18</p></td>
+<td class="text-align:left"><p>2-4h</p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p>5</p></td>
+<td class="text-align:left"><p>Contrôle du MarsCamBot avec Scratch</p></td>
+<td class="text-align:left"><p>10-14</p></td>
+<td class="text-align:left"><p>2-4h</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p>6</p></td>
+<td class="text-align:left"><p>Contrôle du MarsCamBot avec Python</p></td>
+<td class="text-align:left"><p>14-18</p></td>
+<td class="text-align:left"><p>2-4h</p></td>
+</tr>
+</tbody>
+</table>
+<p>Exemples de rovers MarsCamBot construits un chassis en carton, en impression 3D, ou en bois:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p></p></th>
@@ -390,99 +461,39 @@ const thebe_selector_output = ".output, .cell_output"
 </tr>
 </tbody>
 </table>
-<ul class="simple">
-<li><p>La troisième partie consistera à <strong>utiliser le modèle de reconnaissance d’image sur le rover</strong>, pour permettre à celui-ci de retrouver de façon autonome des tubes dans son environnement. Nous proposons un sol martien à imprimer, de façon à rendre l’activité proche de ce qu’un rover martien pourra voir une fois à destination! Ce sont les activités 7 et 8.</p></li>
-</ul>
-<div class="section" id="detail-des-activites">
-<h3>Détail des activités<a class="headerlink" href="#detail-des-activites" title="Permalink to this headline">¶</a></h3>
-<ul class="simple">
-<li><p>De 10 à 14 ans: Programmation des activités avec Scratch</p></li>
-</ul>
+<p>Note: Les activités 5 et 6 sont indépendantes, mais nécessitent d’avoir fait l’activité 4 et d’avoir construit le rover.</p>
+</div>
+<div class="section" id="controle-intelligent-du-rover">
+<h3>3. Contrôle intelligent du rover<a class="headerlink" href="#controle-intelligent-du-rover" title="Permalink to this headline">¶</a></h3>
+<p>La troisième partie consistera à <strong>utiliser le modèle de reconnaissance d’image sur le rover</strong>, pour permettre à celui-ci de retrouver de façon autonome des tubes dans son environnement. Nous proposons un sol martien à imprimer, de façon à rendre l’activité proche de ce qu’un rover martien pourra voir une fois à destination!</p>
+<p>Ce sont les activités 7 à 9:</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p>Numéro activité</p></th>
 <th class="text-align:left head"><p>Activité</p></th>
-<th class="text-align:left head"><p>Dépend des activités</p></th>
+<th class="text-align:left head"><p>Age</p></th>
 <th class="text-align:left head"><p>Temps estimé</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-align:left"><p>1</p></td>
-<td class="text-align:left"><p>Reconnaissance d’images avec la Teachable Machine</p></td>
-<td class="text-align:left"><p></p></td>
-<td class="text-align:left"><p>2-4h</p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p>2</p></td>
-<td class="text-align:left"><p>Reconnaissance d’images avec Scratch</p></td>
-<td class="text-align:left"><p>1</p></td>
-<td class="text-align:left"><p>2-4h</p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p>4</p></td>
-<td class="text-align:left"><p>Jeu - Centre de contrôle Fetch</p></td>
-<td class="text-align:left"><p>(1)</p></td>
-<td class="text-align:left"><p>2-4h</p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p>5</p></td>
-<td class="text-align:left"><p>Construction du MarsCamBot</p></td>
-<td class="text-align:left"><p></p></td>
-<td class="text-align:left"><p>2-4h</p></td>
-</tr>
 <tr class="row-even"><td class="text-align:left"><p>7</p></td>
-<td class="text-align:left"><p>Contrôle du MarsCamBot avec Scratch</p></td>
-<td class="text-align:left"><p>5</p></td>
+<td class="text-align:left"><p>MarsCamBot avec Caméra</p></td>
+<td class="text-align:left"><p>10-18</p></td>
 <td class="text-align:left"><p>2-4h</p></td>
 </tr>
-<tr class="row-odd"><td class="text-align:left"><p>9</p></td>
+<tr class="row-odd"><td class="text-align:left"><p>8</p></td>
 <td class="text-align:left"><p>Contrôle du MarsCamBot et reconnaissance d’images avec Scratch (Adacraft)</p></td>
-<td class="text-align:left"><p>1, 5, 7</p></td>
+<td class="text-align:left"><p>10-14</p></td>
 <td class="text-align:left"><p>2-4h</p></td>
 </tr>
-</tbody>
-</table>
-<ul class="simple">
-<li><p>De 14 à 18 ans: Programmation des activités avec Python</p></li>
-</ul>
-<table class="colwidths-auto table">
-<thead>
-<tr class="row-odd"><th class="text-align:left head"><p>Numéro activité</p></th>
-<th class="text-align:left head"><p>Activité</p></th>
-<th class="text-align:left head"><p>Dépend des activités</p></th>
-<th class="text-align:left head"><p>Temps estimé</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-align:left"><p>1</p></td>
-<td class="text-align:left"><p>Reconnaissance d’images avec la Teachable Machine</p></td>
-<td class="text-align:left"><p></p></td>
-<td class="text-align:left"><p>2-4h</p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p>3</p></td>
-<td class="text-align:left"><p>Reconnaissance d’images avec Python</p></td>
-<td class="text-align:left"><p>1</p></td>
-<td class="text-align:left"><p>2-4h</p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p>4</p></td>
-<td class="text-align:left"><p>Jeu - Centre de contrôle Fetch</p></td>
-<td class="text-align:left"><p>(1)</p></td>
-<td class="text-align:left"><p>2-4h</p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p>5</p></td>
-<td class="text-align:left"><p>Construction du MarsCamBot</p></td>
-<td class="text-align:left"><p></p></td>
-<td class="text-align:left"><p>2-4h</p></td>
-</tr>
-<tr class="row-even"><td class="text-align:left"><p>8</p></td>
-<td class="text-align:left"><p>Contrôle du MarsCamBot avec Python</p></td>
-<td class="text-align:left"><p>5</p></td>
-<td class="text-align:left"><p>2-4h</p></td>
-</tr>
-<tr class="row-odd"><td class="text-align:left"><p>10</p></td>
+<tr class="row-even"><td class="text-align:left"><p>9</p></td>
 <td class="text-align:left"><p>Contrôle du MarsCamBot et reconnaissance d’images avec Python</p></td>
-<td class="text-align:left"><p>3, 5, 8</p></td>
+<td class="text-align:left"><p>14-18</p></td>
 <td class="text-align:left"><p>2-4h</p></td>
 </tr>
 </tbody>
 </table>
+<p>Note: Les activités 8 et 9 sont indépendantes, mais nécessitent d’avoir fait les activités précédentes (reconnaissance d’images, construction du rover, et d’avoir monté la caméra).</p>
 </div>
 </div>
 <div class="section" id="objectifs-pedagogiques">
