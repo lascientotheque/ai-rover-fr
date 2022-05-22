@@ -5,16 +5,18 @@ Construis un rover martien avec une carte Raspberry Pi et programme-le avec des 
 
 
 <div align="center">
-<h4>Le rover martien Fetch en 2026 à la recherche des tubes laissés sur mars en 2022 par le rover Perseverance - <a href="https://mars.nasa.gov/resources/24761/fetch-rover-approaching-sample-tubes-artists-concept/">Vue d'artiste</a>:</h4>
-<img src="./images/fetch-rover.jpg" alt="drawing" width="600"/> 
+<h4>Le rover martien Fetch en 2026 à la recherche des tubes laissés sur mars en 2022 par le rover Perseverance - <a href="https://mars.nasa.gov/resources/24761/fetch-rover-approaching-sample-tubes-artists-concept/">Vue d'artiste</a>:</h4> 
 </div>
+
+<img src="images/fetch-rover.jpg" alt="drawing" width="600"></img>
+
 
 **! En cours de construction !**
 
 ## Public ciblé
 
-* A partir de **10 ans** pour les activités de construction du robot, reconnaissance d'images, et **programmation en Scratch**
-* A partir de **14 ans** pour les activités de construction du robot, reconnaissance d'images, et **programmation en Python**
+* A partir de **10 ans** pour les activités de reconnaissance d'images, construction du robot, et **programmation en Scratch**.
+* A partir de **14 ans** pour les activités de reconnaissance d'images, construction du robot, et **programmation en Python**.
 
 ## Aperçu et motivations des activités
 
@@ -24,53 +26,31 @@ Les activités proposées ici visent à faire découvrir comment concevoir un sy
 
 Les activités se décomposent en trois parties:
 
-* Tout d'abord, nous expliquons comment créer **un modèle prédictif pour la reconnaissance d'image**. On utilisera pour cela la *Google Teachable Machine*. On montrera ensuite comment le modèle peut être **utilisé dans un programme de façon simple, avec Scratch, ou en Python** pour retrouver des tubes sur un sol martien. Ce sont les activités 1 à 3 ci-dessous.
+* Tout d'abord, nous expliquons comment créer **un modèle prédictif pour la reconnaissance d'image**. On utilisera pour cela la *Google Teachable Machine*. On montrera ensuite comment le modèle peut être **utilisé dans un programme de façon simple, avec Scratch, ou en Python** pour retrouver des tubes sur un sol martien. Ce sont les activités 1 à 3.
 
 <div align="center">
 <h4>Google teachable Machine: Apprends à une IA à reconnaître des images:</h4>
+
 <img src="./images/TM_5_tube_other_fr.jpg"  width="600"/> 
+
 </div>
 
 
-* La deuxième partie consistera à **construire un rover**, et à programmer des déplacements. Une carte programmable [Raspberry Pi](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/) et le [CamJam EduKit](https://camjam.me/?page_id=1035) seront utilisés (Le CamJam EduKit fournit toutes les pièces nécessaires à la construction du rover: Les roues, les moteurs, et la connectique). L'activité est prévue pour être **simple, relativement abordable financièrement** (Environ 80 euros en tout pour un CamJam EduKit, une carte programmable Raspberry Pi, et une caméra), et offrant une **large liberté dans la 'personnalisation' de l'apparence du rover**.  Ce sont les activités 4 à 7 ci-dessous.
+* La deuxième partie consistera à **construire un rover**, appelé 'MarsCamBot', et à programmer des déplacements. Une carte programmable [Raspberry Pi](https://www.raspberrypi.com/products/raspberry-pi-3-model-b/) et le [CamJam EduKit](https://camjam.me/?page_id=1035) seront utilisés (Le CamJam EduKit fournit toutes les pièces nécessaires à la construction du rover: Les roues, les moteurs, et la connectique). L'activité est prévue pour être **simple, relativement abordable financièrement** (Environ 80 euros en tout pour un CamJam EduKit, une carte programmable Raspberry Pi, et une caméra), et offrant une **large liberté dans la 'personnalisation' de l'apparence du rover**.  Ce sont les activités 4 à 6.
 
 <div align="center">
-<h4>Exemples de rovers CamJam EduKit construits avec un chassis en carton, en impression 3D, ou en bois:</h4>
+<h4>Exemples de rovers MarsCamBot construits un chassis en carton, en impression 3D, ou en bois:</h4>
 </div>
 
-<table>
-    <tr>
-        <td> 
-            <img src="./images/CamJam_Box.jpg"  width="300"/> 
-        </td>
-        <td> 
-            <img src="./images/CamJam_3DPrint.jpg" alt="drawing" width="300"/> 
-        </td>
-        <td> 
-            <img src="./images/CamJam_Wood.png" width="300"/>
-        </td>
-    </tr>
-    <tr>
-        <td> 
-            <div align="center">
-            <a href="https://www.youtube.com/watch?v=LJDEV7rGwaM">Chassis en carton (avec la boîte du CamJam EduKit)</a>
-            </div>
-        </td>
-        <td> 
-            <div align="center">
-            <a href="https://camjam.me/?page_id=1035">Chassis en impression 3D</a>
-            </div>
-        </td>
-        <td> 
-            <div align="center">
-            <a href="https://www.youtube.com/watch?v=LKTpj8QHWEc">Chassis en bois</a>
-            </div>
-        </td>
-    </tr>
-    
-</table>
 
-* La troisième partie consistera à **utiliser le modèle de reconnaissance d'image sur le rover**, pour permettre à celui-ci de retrouver de façon autonome des tubes dans son environnement. Nous proposons un sol martien à imprimer, de façon à rendre l'activité proche de ce qu'un rover martien pourra voir une fois à destination! Ce sont les activités 8 et 9 ci-dessous.
+||||
+:--- | --- | ---: |
+|<img src="./images/CamJam_Box.jpg" width="230"/>  |<img src="./images/CamJam_3DPrint.jpg" width="300"/> | <img src="./images/CamJam_Wood.png" width="350"/>|
+|<a href="https://www.youtube.com/watch?v=LJDEV7rGwaM">Chassis en carton (avec la boîte du CamJam EduKit)</a>|<a href="https://camjam.me/?page_id=1035">Chassis en impression 3D</a>|<a href="https://www.youtube.com/watch?v=LKTpj8QHWEc">Chassis en bois</a>|
+
+
+
+* La troisième partie consistera à **utiliser le modèle de reconnaissance d'image sur le rover**, pour permettre à celui-ci de retrouver de façon autonome des tubes dans son environnement. Nous proposons un sol martien à imprimer, de façon à rendre l'activité proche de ce qu'un rover martien pourra voir une fois à destination! Ce sont les activités 7 et 8.
 
 ### Détail des activités
 
@@ -78,39 +58,37 @@ Les activités se décomposent en trois parties:
 
 Numéro activité | Activité | Dépend des activités | Temps estimé
  :--- | :--- | :--- | :--- 
-1 | Reconnaissance d'images avec Google Teachable Machine | | 2-4h
-2 | Reconnaissance d'images avec Scratch (Adacraft) | 1  | 2-4h
+1 | Reconnaissance d'images avec la Teachable Machine | | 2-4h
+2 | Reconnaissance d'images avec Scratch | 1  | 2-4h
 4 | Jeu - Centre de contrôle Fetch | (1) | 2-4h
-5 | Construction d'un rover avec Raspberry Pi | | 2-4h
-6 | Contrôle du rover avec un site Web | 5 | 1h
-7 | Contrôle du rover avec Scratch (Adacraft) | 5 | 2-4h
-9 | Contrôle du rover et reconnaissance d'images avec Scratch (Adacraft) | 1, 5, 7 | 2-4h
+5 | Construction du MarsCamBot | | 2-4h
+7 | Contrôle du MarsCamBot avec Scratch | 5 | 2-4h
+9 | Contrôle du MarsCamBot et reconnaissance d'images avec Scratch (Adacraft) | 1, 5, 7 | 2-4h
 
 * De 14 à 18 ans: Programmation des activités avec Python 
 
 Numéro activité | Activité | Dépend des activités | Temps estimé
  :--- | :--- | :--- | :---
-1 | Reconnaissance d'images avec Google Teachable Machine | | 2-4h
-3 | Reconnaissance d'images en Python | 1  | 2-4h
+1 | Reconnaissance d'images avec la Teachable Machine | | 2-4h
+3 | Reconnaissance d'images avec Python | 1  | 2-4h
 4 | Jeu - Centre de contrôle Fetch | (1) | 2-4h
-5 | Construction d'un rover avec Raspberry Pi |  | 2-4h
-6 | Contrôle du rover avec un site Web | 5  | 1h
-8 | Contrôle du rover avec Python | 5 | 2-4h
-10 | Contrôle du rover et reconnaissance d'images avec Python | 3, 5, 8 | 2-4h
+5 | Construction du MarsCamBot |  | 2-4h
+8 | Contrôle du MarsCamBot avec Python | 5 | 2-4h
+10 | Contrôle du MarsCamBot et reconnaissance d'images avec Python | 3, 5, 8 | 2-4h
 
 
 ## Objectifs pédagogiques 
 
 Les activités permettent d'appréhender et s'approprier les notions d'algorithmes, de logigrammes, et les concepts de bases 
 
-* de la programmation (conditions, boucles, variables, objets)
-* de robotique (construction d'un rover, câblage d'une carte programmable avec des moteurs et une batterie)
+* de la programmation (conditions, boucles, variables, objets),
+* de robotique (construction d'un rover, câblage d'une carte programmable avec des moteurs et une batterie),
 * de l'intelligence artificielle (entrainer un modèle de prédiction avec des exemples, utiliser le modèle dans un programme).
 
 
 ### Référentiel FMTTN
 
-Création de contenus
+Création de contenus:
 
 * Savoir: Programmation et logigrammes.
 * Savoir-Faire: Lire un algorithme simple, Écrire un algorithme simple, Lire un programme simple, Écrire un programme simple, Identifier des éléments relatifs à la programmation et aux logigrammes.
