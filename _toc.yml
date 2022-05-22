@@ -1,24 +1,24 @@
 format: jb-book
-root: README
+root: Overview
 parts:
 - caption: Reconnaissance d'images
   numbered: true
   chapters:
-  - file: 1_Image_Recognition/01_Image_Recognition/Image_Recognition
-  - file: 1_Image_Recognition/02_Image_Recognition_Scratch/Image_Recognition_Scratch
-  - file: 1_Image_Recognition/03_Image_Recognition_Python/Image_Recognition_Python
+  - file: 1_Image_Recognition/Image_Recognition/Image_Recognition
+  - file: 1_Image_Recognition/Image_Recognition_Scratch/Image_Recognition_Scratch
+  - file: 1_Image_Recognition/Image_Recognition_Python/Image_Recognition_Python
 - caption: Construction du rover
   numbered: true
   chapters:
-  - file: 2_Rover_Building/04_Rover_Building/Rover_Building
-  - file: 2_Rover_Building/05_MarsCamBot_Control_Scratch/MarsCamBot_Control_Scratch
-  - file: 2_Rover_Building/06_MarsCamBot_Control_Python/MarsCamBot_Control_Python
+  - file: 2_Rover_Building/Rover_Building/Rover_Building
+  - file: 2_Rover_Building/MarsCamBot_Control_Scratch/MarsCamBot_Control_Scratch
+  - file: 2_Rover_Building/MarsCamBot_Control_Python/MarsCamBot_Control_Python
 - caption: Contrôle intelligent du rover
   numbered: true
   chapters:
-  - file: 3_Rover_Camera_Control/07_Camera_Setup/Camera_Setup
-  - file: 3_Rover_Camera_Control/08_MarsCamBot_Control_IR_Scratch/MarsCamBot_Control_IR_Scratch
-  - file: 3_Rover_Camera_Control/09_MarsCamBot_Control_IR_Python/MarsCamBot_Control_IR_Python
+  - file: 3_Rover_Camera_Control/Camera_Setup/Camera_Setup
+  - file: 3_Rover_Camera_Control/MarsCamBot_Control_IR_Scratch/MarsCamBot_Control_IR_Scratch
+  - file: 3_Rover_Camera_Control/MarsCamBot_Control_IR_Python/MarsCamBot_Control_IR_Python
 - caption: Ressources complémentaires
   numbered: true
   chapters:
@@ -27,7 +27,6 @@ parts:
   - file: 4_Additional_Resources/Fetch_Mission_Engineer
   - file: 4_Additional_Resources/Remote_Control
   - file: 4_Additional_Resources/Rover_Alternatives
-  - file: 4_Additional_Resources/Rover_Alternatives
   - file: 4_Additional_Resources/FAQ
   - file: 4_Additional_Resources/Troubleshooting
-  
+
