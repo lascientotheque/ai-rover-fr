@@ -1,4 +1,4 @@
-# Aperçu 
+# MarsCamBot: Rover martien intelligent 
 
 Construis un rover martien avec une carte Raspberry Pi et programme-le avec des techniques  d'intelligence artificielle de reconnaissance d'images pour aller rechercher de précieux tubes sur Mars en 2026!
 
