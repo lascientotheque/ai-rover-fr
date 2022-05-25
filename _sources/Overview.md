@@ -2,8 +2,6 @@
 
 Construis un rover martien avec une carte Raspberry Pi et programme-le avec des techniques  d'intelligence artificielle de reconnaissance d'images pour aller rechercher de précieux tubes sur Mars en 2026!
 
-
-
 <div align="center">
 <h4>Le rover martien Fetch en 2026 à la recherche des tubes laissés sur mars en 2022 par le rover Perseverance - <a href="https://mars.nasa.gov/resources/24761/fetch-rover-approaching-sample-tubes-artists-concept/">Vue d'artiste</a>:</h4> 
 </div>
@@ -21,7 +19,7 @@ Construis un rover martien avec une carte Raspberry Pi et programme-le avec des 
 
 ## Motivations des activités
 
-En 2026, l'Agence Spatiale Européenne (ESA) et la National Aeronautics and Space Administration (NASA) enverront [un rover sur Mars avec pour mission de récuperer des tubes contenant des échantillons de sol martien](https://fr.wikipedia.org/wiki/Mars_Sample_Return#Mission_Sample_Retrieval_Lander_(SRL)). Le rover, qui s'appelle Fetch (qui signifie 'récupérer' en anglais), devra être capable de se déplacer, de retrouver les tubes, et de les récupérer de la façon la plus autonome possible. Pour cela, Fetch utilisera des techniques d'intelligence artificielle, notamment de reconnaissance d'images pour trouver de façon autonome les tubes déposés sur le sol par le rover [Perseverance](https://en.wikipedia.org/wiki/Perseverance_(rover)) en 2022. 
+En 2026, l'Agence Spatiale Européenne (ESA) et la National Aeronautics and Space Administration (NASA) enverront [un rover sur Mars avec pour mission de récuperer des tubes contenant des échantillons de sol martien](https://fr.wikipedia.org/wiki/Mars_Sample_Return#Mission_Sample_Retrieval_Lander_(SRL)). Le rover, qui s'appelle Fetch (qui signifie 'récupérer' en anglais), devra être capable de se déplacer, de retrouver les tubes, et de les récupérer de la façon la plus autonome possible. Pour cela, Fetch utilisera des techniques d'intelligence artificielle, notamment de reconnaissance d'images pour trouver de façon autonome les tubes déposés sur le sol par le rover [Perseverance](https://fr.wikipedia.org/wiki/Exploration_de_Mars_par_Perseverance) en 2022. 
 
 Les activités proposées ici visent à faire découvrir comment concevoir un système d'intelligence artificielle pour de la reconnaissance d'images, et comment permettre à un rover martien de l'utiliser. 
 
@@ -31,7 +29,7 @@ Les activités se décomposent en trois parties: Reconnaissance d'images, constr
 
 ### 1. Reconnaissance d'images
 
-Tout d'abord, nous expliquons comment créer **un modèle prédictif pour la reconnaissance d'image**. On utilisera pour cela la *Google Teachable Machine*. On montrera ensuite comment le modèle peut être **utilisé dans un programme de façon simple, avec Scratch, ou en Python** pour retrouver des tubes sur un sol martien. 
+Tout d'abord, nous expliquons comment créer **un modèle prédictif pour la reconnaissance d'image**. On utilisera pour cela la *[Teachable Machine](https://teachablemachine.withgoogle.com/)*. On montrera ensuite comment le modèle peut être **utilisé dans un programme de façon simple avec Scratch ou en Python** pour retrouver des tubes sur un sol martien. 
 
 Ce sont les activités 1 à 3:
 
@@ -49,7 +47,9 @@ Exemple de l'interface Teachable Machine que vous utiliserez pour apprendre à u
 
 </div>
 
-Note: Les activités 2 et 3 sont indépendantes, mais nécessitent d'avoir fait l'activité 1 pour créer un modèle de reconnaissance d'images.
+```{note}
+Les activités 2 et 3 sont indépendantes, mais nécessitent d'avoir fait l'activité 1 pour créer un modèle de reconnaissance d'images.
+```
 
 ### 2. Construction du MarsCamBot
 
@@ -70,7 +70,9 @@ Exemples de rovers MarsCamBot construits un chassis en carton, en impression 3D,
 |<img src="./images/CamJam_Box.jpg" width="230"/>  |<img src="./images/CamJam_3DPrint.jpg" width="300"/> | <img src="./images/CamJam_Wood.png" width="350"/>|
 |<a href="https://www.youtube.com/watch?v=LJDEV7rGwaM">Chassis en carton (avec la boîte du CamJam EduKit)</a>|<a href="https://camjam.me/?page_id=1035">Chassis en impression 3D</a>|<a href="https://www.youtube.com/watch?v=LKTpj8QHWEc">Chassis en bois</a>|
 
-Note: Les activités 5 et 6 sont indépendantes, mais nécessitent d'avoir fait l'activité 4 et d'avoir construit le rover.
+```{note}
+Les activités 5 et 6 sont indépendantes, mais nécessitent d'avoir fait l'activité 4 et d'avoir construit le rover.
+```
 
 ### 3. Contrôle intelligent du rover
 
@@ -84,7 +86,9 @@ Numéro activité | Activité | Age | Temps estimé
 8 | Contrôle du MarsCamBot et reconnaissance d'images avec Scratch (Adacraft) | 10-14 | 2-4h
 9 | Contrôle du MarsCamBot et reconnaissance d'images avec Python | 14-18 | 2-4h
 
-Note: Les activités 8 et 9 sont indépendantes, mais nécessitent d'avoir fait les activités précédentes (reconnaissance d'images, construction du rover, et d'avoir monté la caméra).
+```{note}
+Les activités 8 et 9 sont indépendantes, mais nécessitent d'avoir fait les activités précédentes (reconnaissance d'images, construction du rover, et d'avoir monté la caméra).
+```
 
 ## Objectifs pédagogiques 
 
@@ -95,7 +99,7 @@ Les activités permettent d'appréhender et s'approprier les notions d'algorithm
 * de l'intelligence artificielle (entrainer un modèle de prédiction avec des exemples, utiliser le modèle dans un programme).
 
 
-### Référentiel FMTTN
+### 1. Référentiel FMTTN
 
 Création de contenus:
 
@@ -103,7 +107,7 @@ Création de contenus:
 * Savoir-Faire: Lire un algorithme simple, Écrire un algorithme simple, Lire un programme simple, Écrire un programme simple, Identifier des éléments relatifs à la programmation et aux logigrammes.
 * Compétences: Concevoir un algorithme pour résoudre un problème simple, Concevoir un programme pour résoudre un problème, Porter un regard critique sur les raisons d’être et les conséquences induites par un algorithme.
 
-### Référentiel MIT AI Ethics
+### 2. Référentiel MIT AI Ethics
 
 [Un programme d'études sur l'éthique de l'intelligence artificielle pour les élèves de collège](https://docs.google.com/document/d/1pQ8D4iDnwKoiveJOZZgy6SLvgDD1nYQOPFUwyuBpEic/edit#) (Page 7)
 

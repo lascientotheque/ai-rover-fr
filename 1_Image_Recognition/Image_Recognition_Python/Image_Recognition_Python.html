@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>3. Reconnaissance d’images avec Python &#8212; MarsCamBot &lt;br&gt; Rover martien intelligent</title>
+    <title>3. Reconnaissance d’images avec Python &#8212; Explore le sol martien avec le MarsCamBot!</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -84,7 +84,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="../../_static/fetch-rover-small.jpg" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">MarsCamBot <br> Rover martien intelligent</h1>
+      <h1 class="site-logo" id="site-title">Explore le sol martien avec le MarsCamBot!</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
@@ -172,8 +172,8 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../4_Additional_Resources/Raspberry_Pi.html">
-   10. Raspberry Pi
+  <a class="reference internal" href="../../4_Additional_Resources/Raspberry_Pi/Raspberry_Pi.html">
+   10. Raspberry Pi: Prise en main et préparation
   </a>
  </li>
  <li class="toctree-l1">
@@ -187,7 +187,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../../4_Additional_Resources/Remote_Control.html">
+  <a class="reference internal" href="../../4_Additional_Resources/Remote_Control/Remote_Control.html">
    13. Télécommande sur page Web
   </a>
  </li>
@@ -389,7 +389,7 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="reconnaissance-d-images-avec-python">
 <span id="image-recognition-python"></span><h1><span class="section-number">3. </span>Reconnaissance d’images avec Python<a class="headerlink" href="#reconnaissance-d-images-avec-python" title="Permalink to this headline">¶</a></h1>
-<p><strong>Objectif:</strong> Déplace la tortue Python avec de la reconnaissance d’images.</p>
+<p><strong>Objectif:</strong> Déplacer la tortue Python avec de la reconnaissance d’images.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:left head"><p></p></th>
@@ -433,7 +433,7 @@ const thebe_selector_output = ".output, .cell_output"
 </pre></div>
 </div>
 <p>Remarque: Tous les textes après les ‘#” sont des commentaires, et tu n’es pas obligé de les recopier. Ils aident cependant à comprendre ce que fait le code.</p>
-<p>Sauvegarde le fichier sous le nom ‘1-tortue.py’.</p>
+<p>Sauvegarde le fichier sous le nom ‘1-turtle.py’.</p>
 </div>
 <div class="section" id="teste-le-code">
 <h3><span class="section-number">3.1.2. </span>Teste le code<a class="headerlink" href="#teste-le-code" title="Permalink to this headline">¶</a></h3>
@@ -476,7 +476,6 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Necessary import</span>
 <span class="kn">import</span> <span class="nn">cv2</span> <span class="c1"># cv2 is used to take image from the camera</span>
 <span class="kn">import</span> <span class="nn">myfunctions</span> <span class="c1"># myfunctions helps for taking picture and making predictions</span>
-<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> <span class="c1"># matplotlib is used to deal with images</span>
 <span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span> <span class="c1"># PIL is used to deal with images</span>
 <span class="kn">import</span> <span class="nn">time</span> <span class="c1"># time is used for making the computer wait</span>
 
@@ -488,7 +487,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 <span class="c1"># Display picture</span>
 <span class="n">picture_as_image_object</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">fromarray</span><span class="p">(</span><span class="n">picture_rgb</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">picture_as_image_object</span><span class="p">)</span>
+<span class="n">picture_as_image_object</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">picture_as_image_object</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -509,7 +508,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="entrainement-du-classificateur">
 <h3><span class="section-number">3.3.1. </span>Entraînement du classificateur<a class="headerlink" href="#entrainement-du-classificateur" title="Permalink to this headline">¶</a></h3>
 <p>Pour contrôler la tortue, tu peux par exemple utiliser une flèche imprimée sur un papier, comme la flèche ci-dessous:</p>
-<a class="reference internal image-reference" href="https://github.com/lascientotheque/ai-rover-fr/raw/main/03_Image_Recognition_Python/images/arrrow.jpg"><img alt="drawing" src="https://github.com/lascientotheque/ai-rover-fr/raw/main/03_Image_Recognition_Python/images/arrrow.jpg" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="../../_images/arrrow.jpg"><img alt="drawing" src="../../_images/arrrow.jpg" style="width: 300px;" /></a>
 <p>Créer ensuite un classificateur avec deux classes dans la Teachable machine, que tu nommeras:</p>
 <ul class="simple">
 <li><p>Forward: Avec des exemples de flèche vers le haut (qui serviront à faire avancer la tortue)</p></li>

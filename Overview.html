@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MarsCamBot: Rover martien intelligent &#8212; MarsCamBot &lt;br&gt; Rover martien intelligent</title>
+    <title>MarsCamBot: Rover martien intelligent &#8212; Explore le sol martien avec le MarsCamBot!</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -83,7 +83,7 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="_static/fetch-rover-small.jpg" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">MarsCamBot <br> Rover martien intelligent</h1>
+      <h1 class="site-logo" id="site-title">Explore le sol martien avec le MarsCamBot!</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -171,8 +171,8 @@ const thebe_selector_output = ".output, .cell_output"
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="4_Additional_Resources/Raspberry_Pi.html">
-   10. Raspberry Pi
+  <a class="reference internal" href="4_Additional_Resources/Raspberry_Pi/Raspberry_Pi.html">
+   10. Raspberry Pi: Prise en main et préparation
   </a>
  </li>
  <li class="toctree-l1">
@@ -186,7 +186,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="4_Additional_Resources/Remote_Control.html">
+  <a class="reference internal" href="4_Additional_Resources/Remote_Control/Remote_Control.html">
    13. Télécommande sur page Web
   </a>
  </li>
@@ -333,12 +333,12 @@ const thebe_selector_output = ".output, .cell_output"
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#referentiel-fmttn">
-     Référentiel FMTTN
+     1. Référentiel FMTTN
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#referentiel-mit-ai-ethics">
-     Référentiel MIT AI Ethics
+     2. Référentiel MIT AI Ethics
     </a>
    </li>
   </ul>
@@ -371,7 +371,7 @@ const thebe_selector_output = ".output, .cell_output"
 </div>
 <div class="section" id="motivations-des-activites">
 <h2>Motivations des activités<a class="headerlink" href="#motivations-des-activites" title="Permalink to this headline">¶</a></h2>
-<p>En 2026, l’Agence Spatiale Européenne (ESA) et la National Aeronautics and Space Administration (NASA) enverront <a class="reference external" href="https://fr.wikipedia.org/wiki/Mars_Sample_Return#Mission_Sample_Retrieval_Lander_(SRL)">un rover sur Mars avec pour mission de récuperer des tubes contenant des échantillons de sol martien</a>. Le rover, qui s’appelle Fetch (qui signifie ‘récupérer’ en anglais), devra être capable de se déplacer, de retrouver les tubes, et de les récupérer de la façon la plus autonome possible. Pour cela, Fetch utilisera des techniques d’intelligence artificielle, notamment de reconnaissance d’images pour trouver de façon autonome les tubes déposés sur le sol par le rover <a class="reference external" href="https://en.wikipedia.org/wiki/Perseverance_(rover)">Perseverance</a> en 2022.</p>
+<p>En 2026, l’Agence Spatiale Européenne (ESA) et la National Aeronautics and Space Administration (NASA) enverront <a class="reference external" href="https://fr.wikipedia.org/wiki/Mars_Sample_Return#Mission_Sample_Retrieval_Lander_(SRL)">un rover sur Mars avec pour mission de récuperer des tubes contenant des échantillons de sol martien</a>. Le rover, qui s’appelle Fetch (qui signifie ‘récupérer’ en anglais), devra être capable de se déplacer, de retrouver les tubes, et de les récupérer de la façon la plus autonome possible. Pour cela, Fetch utilisera des techniques d’intelligence artificielle, notamment de reconnaissance d’images pour trouver de façon autonome les tubes déposés sur le sol par le rover <a class="reference external" href="https://fr.wikipedia.org/wiki/Exploration_de_Mars_par_Perseverance">Perseverance</a> en 2022.</p>
 <p>Les activités proposées ici visent à faire découvrir comment concevoir un système d’intelligence artificielle pour de la reconnaissance d’images, et comment permettre à un rover martien de l’utiliser.</p>
 </div>
 <div class="section" id="apercu">
@@ -379,7 +379,7 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Les activités se décomposent en trois parties: Reconnaissance d’images, construction du rover, et contrôle intelligent du rover.</p>
 <div class="section" id="reconnaissance-d-images">
 <h3>1. Reconnaissance d’images<a class="headerlink" href="#reconnaissance-d-images" title="Permalink to this headline">¶</a></h3>
-<p>Tout d’abord, nous expliquons comment créer <strong>un modèle prédictif pour la reconnaissance d’image</strong>. On utilisera pour cela la <em>Google Teachable Machine</em>. On montrera ensuite comment le modèle peut être <strong>utilisé dans un programme de façon simple, avec Scratch, ou en Python</strong> pour retrouver des tubes sur un sol martien.</p>
+<p>Tout d’abord, nous expliquons comment créer <strong>un modèle prédictif pour la reconnaissance d’image</strong>. On utilisera pour cela la <em><a class="reference external" href="https://teachablemachine.withgoogle.com/">Teachable Machine</a></em>. On montrera ensuite comment le modèle peut être <strong>utilisé dans un programme de façon simple avec Scratch ou en Python</strong> pour retrouver des tubes sur un sol martien.</p>
 <p>Ce sont les activités 1 à 3:</p>
 <table class="colwidths-auto table">
 <thead>
@@ -410,7 +410,10 @@ const thebe_selector_output = ".output, .cell_output"
 <p>Exemple de l’interface Teachable Machine que vous utiliserez pour apprendre à une IA à reconnaître des images (par exemple retrouver des tubes sur un sol martien):</p>
 <a class="reference internal image-reference" href="_images/TM_5_tube_other_fr.jpg"><img alt="_images/TM_5_tube_other_fr.jpg" src="_images/TM_5_tube_other_fr.jpg" style="width: 600px;" /></a>
 </div>
-<p>Note: Les activités 2 et 3 sont indépendantes, mais nécessitent d’avoir fait l’activité 1 pour créer un modèle de reconnaissance d’images.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les activités 2 et 3 sont indépendantes, mais nécessitent d’avoir fait l’activité 1 pour créer un modèle de reconnaissance d’images.</p>
+</div>
 </div>
 <div class="section" id="construction-du-marscambot">
 <h3>2. Construction du MarsCamBot<a class="headerlink" href="#construction-du-marscambot" title="Permalink to this headline">¶</a></h3>
@@ -461,7 +464,10 @@ const thebe_selector_output = ".output, .cell_output"
 </tr>
 </tbody>
 </table>
-<p>Note: Les activités 5 et 6 sont indépendantes, mais nécessitent d’avoir fait l’activité 4 et d’avoir construit le rover.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les activités 5 et 6 sont indépendantes, mais nécessitent d’avoir fait l’activité 4 et d’avoir construit le rover.</p>
+</div>
 </div>
 <div class="section" id="controle-intelligent-du-rover">
 <h3>3. Contrôle intelligent du rover<a class="headerlink" href="#controle-intelligent-du-rover" title="Permalink to this headline">¶</a></h3>
@@ -493,7 +499,10 @@ const thebe_selector_output = ".output, .cell_output"
 </tr>
 </tbody>
 </table>
-<p>Note: Les activités 8 et 9 sont indépendantes, mais nécessitent d’avoir fait les activités précédentes (reconnaissance d’images, construction du rover, et d’avoir monté la caméra).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Les activités 8 et 9 sont indépendantes, mais nécessitent d’avoir fait les activités précédentes (reconnaissance d’images, construction du rover, et d’avoir monté la caméra).</p>
+</div>
 </div>
 </div>
 <div class="section" id="objectifs-pedagogiques">
@@ -505,7 +514,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>de l’intelligence artificielle (entrainer un modèle de prédiction avec des exemples, utiliser le modèle dans un programme).</p></li>
 </ul>
 <div class="section" id="referentiel-fmttn">
-<h3>Référentiel FMTTN<a class="headerlink" href="#referentiel-fmttn" title="Permalink to this headline">¶</a></h3>
+<h3>1. Référentiel FMTTN<a class="headerlink" href="#referentiel-fmttn" title="Permalink to this headline">¶</a></h3>
 <p>Création de contenus:</p>
 <ul class="simple">
 <li><p>Savoir: Programmation et logigrammes.</p></li>
@@ -514,7 +523,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </div>
 <div class="section" id="referentiel-mit-ai-ethics">
-<h3>Référentiel MIT AI Ethics<a class="headerlink" href="#referentiel-mit-ai-ethics" title="Permalink to this headline">¶</a></h3>
+<h3>2. Référentiel MIT AI Ethics<a class="headerlink" href="#referentiel-mit-ai-ethics" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference external" href="https://docs.google.com/document/d/1pQ8D4iDnwKoiveJOZZgy6SLvgDD1nYQOPFUwyuBpEic/edit">Un programme d’études sur l’éthique de l’intelligence artificielle pour les élèves de collège</a> (Page 7)</p>
 <ul class="simple">
 <li><p>1 - Comprendre les mécanismes de base des systèmes d’intelligence artificielle.</p></li>
